@@ -1,23 +1,34 @@
 import React from 'react'
-import { View, StyleSheet, Text, Button } from 'react-native'
-
-const styles = StyleSheet.create({
-    textFont: {
-        fontSize: 48,
-    },
-})
+import { View, StyleSheet } from 'react-native'
+import { makeStyles } from '@material-ui/core/styles'
+import { TextField, Typography, Button } from '@material-ui/core'
+import Spacer from '../Components/Spacer'
 
 const SigninScreen = ({ navigation }) => (
     <View>
-        <Text style={styles.textFont}>SigninScreen</Text>
-        <Button
-            title="Go to Signup"
-            onPress={() => navigation.navigate('Signup')}
+        <Spacer>
+            <Typography variant="h5">Signin to see Tracks </Typography>
+        </Spacer>
+        <TextField
+            label="Email"
+            style={{ margin: 8 }}
+            placeholder="Enter Your Email"
+            fullWidth
+            margin="normal"
         />
-        <Button
-            title="Go to main"
-            onPress={() => navigation.navigate('mainFlow')}
+        <Spacer />
+        <TextField
+            label="Password"
+            style={{ margin: 8 }}
+            placeholder="Enter Your Password"
+            fullWidth
+            margin="normal"
         />
+        <Spacer>
+            <Button variant="outlined" color="primary">
+                SignIn
+            </Button>
+        </Spacer>
     </View>
 )
 
