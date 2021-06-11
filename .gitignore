@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 node_modules/
 .expo/
+=======
+node_modules/**/*
+.expo/*
+>>>>>>> master
 npm-debug.*
 *.jks
 *.p8

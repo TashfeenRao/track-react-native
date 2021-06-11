@@ -5,6 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+<<<<<<< HEAD
+=======
+    "backgroundColor": "#894829",
+>>>>>>> master
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -13,16 +17,24 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+<<<<<<< HEAD
     "assetBundlePatterns": [
       "**/*"
     ],
+=======
+    "assetBundlePatterns": ["**/*"],
+>>>>>>> master
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
+<<<<<<< HEAD
         "backgroundColor": "#FFFFFF"
+=======
+        "backgroundColor": "#ffffff"
+>>>>>>> master
       }
     },
     "web": {
