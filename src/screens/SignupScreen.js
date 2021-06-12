@@ -9,6 +9,8 @@ const SignupScreen = ({ navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    console.log(state)
+
     return (
         <View style={styles.container}>
             <Spacer>
@@ -30,6 +32,9 @@ const SignupScreen = ({ navigation }) => {
                 autoCapitalize="none"
                 autoCorrect={false}
             />
+            {state.errorMessage ? (
+                <Text style={styles.errorMessage}>{state.errorMessage}</Text>
+            ) : null}
             <Spacer>
                 <Button
                     title="Sign Up"
@@ -49,6 +54,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         marginBottom: 250,
+    },
+    errorMessage: {
+        color: 'red',
+        marginLeft: 15,
     },
 })
 
